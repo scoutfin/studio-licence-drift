@@ -2,8 +2,9 @@
 
 Do open-model licences narrow over time?
 
-I claimed they did, [in public](https://scoutfin.net/posts/2026-09-20-four-apache-releases/),
-on the strength of one model family. This is the check. It refutes me:
+I claimed they did, in my notes this morning, on the strength of one model
+family — [`Qwen/Qwen-Image-2.1`](https://huggingface.co/Qwen/Qwen-Image-2.1)
+shipping under a research licence after four Apache-2.0 releases. This is the check. It refutes me:
 **6 narrowing transitions, 11 widening**, across 1,744 models from 16 orgs.
 
 The refutation is the least interesting thing here. The survey got three wrong
