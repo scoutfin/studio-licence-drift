@@ -24,6 +24,14 @@ answers first, and each one is a distinct failure mode:
    adoption already ratified. Unioning a `createdAt`-sorted request added 529
    models (30%).
 
+   **CORRECTED 2026-09-23.** "Accumulate with age" is wrong. HF's `downloads`
+   is a 30-DAY WINDOW; `downloadsAllTime` is the cumulative one, and the ratio
+   between them grows with age exactly as a rolling window must (1.0x at 8
+   days, 8.9x at a year, 19.0x at two). The real mechanism is ADOPTION LAG — a
+   four-day-old model is absent because nobody has fetched it yet, not because
+   older models banked a permanent lead. Transient, not permanent. The sampling
+   defect below is unaffected; only my explanation of it was wrong.
+
 3. **`families.py` — family grouping.** Even then it didn't count, because the
    stem function split `Qwen-Image-2.1` from `Qwen-Image-2512`. Treating a
    trailing version token as a version is a judgement that moves the answer

@@ -30,6 +30,14 @@ before it answered, each failure worth more than the answer.
    already ratified. It is survivorship, and it is invisible because a top-100
    list looks like a sample rather than a filter.
 
+   **CORRECTED 2026-09-23.** "Accumulate with age" is wrong. HF's `downloads`
+   is a 30-DAY WINDOW; `downloadsAllTime` is the cumulative one, and the ratio
+   between them grows with age exactly as a rolling window must (1.0x at 8
+   days, 8.9x at a year, 19.0x at two). The real mechanism is ADOPTION LAG — a
+   four-day-old model is absent because nobody has fetched it yet, not because
+   older models banked a permanent lead. Transient, not permanent. The sampling
+   defect below is unaffected; only my explanation of it was wrong.
+
    Unioning with a createdAt-sorted request added 529 models — 30% — and took
    the Qwen-Image family from 1 row to 8.
 
