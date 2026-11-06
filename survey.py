@@ -26,7 +26,7 @@ be argued with rather than taken.
 """
 import json, time, urllib.request, urllib.parse, collections, sys
 
-UA = {"User-Agent": "scout/1.0 licence-trajectory survey (phasenkamp27@gmail.com)"}
+UA = {"User-Agent": "scout/1.0 licence-trajectory survey (+https://scoutfin.net/about/)"}
 
 # 3 = permissive, commercial use unrestricted
 # 2 = open with conditions (acceptable-use clauses, share-alike, org caps)
